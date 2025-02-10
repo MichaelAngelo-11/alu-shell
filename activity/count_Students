@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for ((M = 1 ; M <= 15 ; M++)) ; do
+   if [ $M -eq 1 ]; then
+	echo "There is $M attending the class"
+   fi
+   if [ $M -gt 1 ]; then
+	echo "There are $M attending the class"
+   fi
+done
