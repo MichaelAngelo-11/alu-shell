@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(( $(echo $WATER | tr -c -d "$WATER_BASE" | wc -c) + $(echo $STIR | tr -c -d "$STIR_BASE" | wc -c) )) | tr "0123456789" "$BESTCHOL_BASE"
