@@ -7,13 +7,13 @@
 
 function love() {
 	rm /var/run/myscript.pid
-        exit
+       	exit
 }
 
 trap "echo I hate the kill command;love" SIGTERM
 trap "eecho  Y U no love me?!;love" SIGINT
 
 echo $$ >> /var/run/myscript.pid
-while [ true ]; do
+while 'true' ; do
 	echo To infinity and beyond;
 done
